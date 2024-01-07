@@ -1,0 +1,39 @@
+body {
+    background: #369;
+    color: white;
+}
+
+p {
+    color: black;
+}
+a {
+    color: white;
+}
+/* АТРИБУТ СЕЛЕКТОР */
+/* Конкретните 'а',които започват с 'http' */
+a[href^="https://"]
+{
+    color: orange;
+}
+ul li {
+    color: rgb(45, 166, 43);
+}
+.fancy {
+    border: 2px solid purple;
+}
+
+.box {
+    background: white;
+}
+
+.warning {
+    color: red;
+}
+.amazing {
+    color: black !important;
+}
+/* ID -Ако нямаме !important в горният клас, селекторът ще вземе цветът по ID на селектора */
+#header_my_html {
+    font-size: 90px;
+    color: lime;
+}
