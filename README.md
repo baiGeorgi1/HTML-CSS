@@ -8,6 +8,10 @@ HTML &amp; CSS course - January 2024
     - Introduction to HTML
         - Main tags and attributes
     - introduction to CSS
+        - CSS rules
+        - CSS properties
+    - Practice
+        - some zip files with solutions
 2.
 3.
 4.
