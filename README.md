@@ -11,7 +11,8 @@ HTML &amp; CSS course - January 2024
         - CSS rules
         - CSS properties
     - Practice
-        - some zip files with solutions
+        - some zip files with solutions (homework)
+        - more exercises
 2.
 3.
 4.
