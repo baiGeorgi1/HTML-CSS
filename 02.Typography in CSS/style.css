@@ -1,0 +1,14 @@
+@import url(typography.css); /* import CSS from other file/site*/
+
+/* .site-header {
+    border-bottom: 2px solid #000;
+} */
+
+.site {
+    max-width: 66ch;
+    margin: 0 auto;
+}
+main article:nth-child(1) {
+    /*пъвото дете в main-a*/
+    font-size: 1.2em;
+}
