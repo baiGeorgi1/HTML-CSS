@@ -1,1 +1,30 @@
-/* TODO: style the html */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+
+html {
+    font: 18px/1.5 Verdana, geneva, Tahoma, sans-serif;
+}
+body {
+    font: inherit;
+}
+ul {
+    list-style: none;
+    display: block;
+    font-size: 1.5em;
+}
+
+[class~="fa-check"] {
+    margin-right: 0.3em;
+    font-family: "Font Awesome 6 Free";
+    display: inline-block;
+    color: #2fcc71;
+}
+[class~="fa-star"] {
+    margin-right: 0.3em;
+    display: inline-block;
+    font-family: "Font Awesome 6 Free";
+    color: coral;
+}
+ul.contact i {
+    color: #3498da;
+    margin-right: 0.3em;
+}

@@ -1,0 +1,4 @@
+{
+    "css.format.newlineBetweenSelectors": true,
+    "less.format.newlineBetweenSelectors": true
+}

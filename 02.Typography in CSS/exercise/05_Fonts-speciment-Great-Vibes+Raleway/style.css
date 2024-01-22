@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+html {
+    font: 16px/1.5 Raleway, sans-serif;
+    margin: 50px;
+}
+body,
+span {
+    font: inherit;
+}
+h1,
+h2 {
+    font-family: "Great Vibes", cursive;
+    line-height: 1.2;
+    font-weight: 700;
+}
+.square {
+    list-style: square;
+}
+.disc {
+    list-style: disc;
+}
+.circle {
+    list-style: circle;
+}

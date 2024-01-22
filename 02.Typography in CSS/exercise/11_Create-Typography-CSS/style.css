@@ -1,0 +1,75 @@
+html {
+    font: 16px/1.5 Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+body,
+article,
+table {
+    font: inherit;
+}
+article {
+    padding: 1em 3em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Georgia, serif;
+    line-height: 1em;
+}
+h1 {
+    font-size: 2.2em;
+}
+h2 {
+    font-size: 2em;
+}
+h3 {
+    font-size: 1.6em;
+}
+h4 {
+    font-size: 1.4em;
+}
+h5 {
+    font-size: 1.2em;
+}
+h6 {
+    font-size: 1em;
+}
+table {
+    text-align: left;
+    width: 100%;
+}
+table,
+th,
+td {
+    border-collapse: collapse;
+    border: 1px solid gray;
+}
+thead {
+    color: black;
+    background-color: gray;
+}
+tbody tr:nth-child(odd) {
+    background-color: lightgray;
+}
+
+blockquote {
+    border-left: 0.2em solid rgb(221, 221, 221);
+    padding-left: 1em;
+    font-style: italic;
+}
+blockquote p:last-of-type {
+    text-align: end;
+}
+ul.square {
+    list-style: square;
+}
+ul.disc {
+    list-style: disc;
+}
+ul.circle {
+    list-style: circle;
+}
