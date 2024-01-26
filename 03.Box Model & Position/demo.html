@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            body {
+                padding: 2em;
+            }
+            span,
+            p {
+                border: 2px solid currentColor;
+            }
+            p {
+                width: 500px; /*С  width фиксираме ширината на блока и не се променя при промяна на дисплея!*/
+            }
+            span {
+                color: #090;
+                display: block; /*така задаваме inline елем., да станат block елем.*/
+            }
+            .container {
+                border: 2px solid red;
+                margin-bottom: 2em;
+                width: 700px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">Text</div>
+        <span>Lorem ipsum dolor sit amet.</span>
+        <p>Lorem ipsum dolor sit amet .</p>
+        <span>Lorem ipsum dolor sit amet.</span>
+        <span>Lorem ipsum dolor sit amet.</span>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non rem illum est veritatis
+            mollitia accusamus explicabo quia porro aliquam vel!
+        </p>
+    </body>
+</html>

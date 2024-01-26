@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Position</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+            }
+            body {
+                padding: 2em;
+            }
+            .container {
+                border: 2px solid black;
+                padding: 2em;
+            }
+            .box {
+                border: 2px solid #060;
+                padding: 1em;
+                background-color: #eee;
+                z-index: 10;
+            }
+            /* .b2 {
+                position: relative;
+                top: 2em;
+                left: 2em;
+            } */
+            /* .b2 {
+                position: absolute;
+                top: 0;
+                left: 0 ;
+            } */
+            .b2 {
+                position: fixed; /*С тази позиция блокът стои на видимата част от viewPort-a*/
+                top: 50%;
+                left: 50%;
+                /*middle positioning*/
+                transform: translate(-50%, -50%);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box b1">Line 1</div>
+            <div class="box b2">Line 2 <br />Another</div>
+            <div class="box b3">Line 3</div>
+            <div class="box b4">Line 4</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            body {
+                padding: 2em;
+            }
+            div {
+                border: 1px dashed #333;
+                padding: 2em;
+            }
+            .margin {
+                background-color: lightgoldenrodyellow;
+            }
+            .border {
+                background-color: antiquewhite;
+            }
+            .padding {
+                background-color: lightgreen;
+            }
+            .content {
+                background-color: lightblue;
+                text-align: center;
+            }
+            .box {
+                border: 2px solid black;
+                margin: 2em auto; /*top/bottom => 2em & left/right=>auto*/
+                padding: 2em;
+                line-height: 1;
+                /* max-width: 400px; */
+                /* min-width: 400px; */
+                height: 50px;
+                overflow: auto;
+            }
+            .normal {
+                width: 350px;
+                height: 150px;
+                margin: 10px;
+                padding: 25px;
+                border: 5px solid black;
+            }
+            .fixed {
+                box-sizing: border-box;
+                width: 350px;
+                height: 150px;
+                margin: 10px;
+                padding: 25px;
+                border: 5px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="margin">
+            <div class="border">
+                <div class="padding">
+                    <div class="content">Text</div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem ipsa repudiandae
+            similique ducimus culpa voluptas impedit molestias ipsam assumenda suscipit? Lorem ipsum
+            dolor, sit amet consectetur adipisicing elit. Dolorem ipsa repudiandae similique ducimus
+            culpa voluptas impedit molestias ipsam assumenda suscipit? Lorem ipsum dolor, sit amet
+            consectetur adipisicing elit. Dolorem ipsa repudiandae similique ducimus culpa voluptas
+            impedit molestias ipsam assumenda suscipit?
+        </div>
+
+        <div class="normal"></div>
+        <div class="fixed"></div>
+    </body>
+</html>
