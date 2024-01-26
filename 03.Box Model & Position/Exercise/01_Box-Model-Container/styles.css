@@ -1,1 +1,18 @@
-/* TODO: style the html */
+html {
+    font: 16px/1.5 Arial, Helvetica, sans-serif;
+}
+body {
+    font: inherit;
+}
+body {
+    background-color: lightgrey;
+}
+p {
+    margin: auto;
+    width: 19em;
+    padding: 1.1em;
+    border: 2px solid #e6eaef;
+    background-color: #0f4069;
+    border-radius: 1em 3.1em 1em 3.1em;
+    color: whitesmoke;
+}

@@ -1,0 +1,31 @@
+html {
+    font: 16px/1.5 serif;
+}
+h2 {
+    font-size: 1.8em;
+}
+h3 {
+    font-size: 1.4em;
+}
+body,
+section,
+article {
+    font: inherit;
+}
+article {
+    width: 31.2em;
+    height: 12.5em;
+    background-color: lightgray;
+    padding: 0.6em;
+    overflow: auto;
+}
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
+p {
+    text-indent: 1.9em;
+}
