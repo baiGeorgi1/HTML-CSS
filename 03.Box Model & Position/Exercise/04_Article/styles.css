@@ -1,1 +1,19 @@
-/* TODO: style the html */
+main {
+    width: 900px;
+    height: 140px;
+}
+img {
+    border-right: 1px solid #d1d1d1;
+    border-bottom: 1px solid #d1d1d1;
+    float: left;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+}
+p {
+    font-size: 1.3em;
+    line-height: 30px;
+    color: #2e2e2e;
+    text-align: justify;
+}
