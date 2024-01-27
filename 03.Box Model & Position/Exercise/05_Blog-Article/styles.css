@@ -1,1 +1,42 @@
-/* TODO: style the html */
+html {
+    padding: 0;
+    margin: 0;
+    font: 16px/1.5 Georgia, "Times New Roman", Times, serif;
+}
+body,
+article,
+div {
+    font: inherit;
+}
+body {
+    background-color: #02475e;
+}
+article h2 {
+    font-size: 2em;
+    color: #fefecc;
+    margin: 0.75em;
+    text-align: center;
+}
+article p {
+    color: #eee;
+    font: 1em/1.5 Arial, sans-serif;
+    padding: 0.6em;
+    text-indent: 1.9em;
+}
+article div {
+    margin-bottom: 1.875em;
+    border-top: 2px solid #fff;
+    position: relative;
+    top: 20px;
+}
+article div span {
+    width: 7.5em;
+    font-size: 0.9em;
+    text-align: center;
+    padding: 3px 5px;
+    margin: 0 auto;
+    background-color: #fff;
+    display: block;
+    position: relative;
+    top: -11px;
+}
