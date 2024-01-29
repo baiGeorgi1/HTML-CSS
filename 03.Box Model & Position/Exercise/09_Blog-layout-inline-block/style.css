@@ -1,0 +1,53 @@
+html {
+    margin: 0;
+    padding: 0;
+    font: 16px/1.5 Helvetica, san-serif;
+}
+body,
+article,
+aside {
+    font: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Times New Roman", Times, serif;
+}
+h1 {
+    font-size: 2.2em;
+    line-height: 1em;
+}
+h2 {
+    font-size: 1.8em;
+    line-height: 1em;
+}
+h3 {
+    font-size: 1.6em;
+    line-height: 1em;
+}
+body {
+    padding: 2em;
+    background-color: rgb(238, 238, 238);
+    color: rgb(51, 51, 51);
+}
+aside {
+    position: absolute;
+    width: 30%;
+    display: inline-block;
+    margin-right: 2em;
+}
+article {
+    padding-inline: 2em;
+    width: 60%;
+    display: inline-block;
+}
+
+article header {
+    margin-bottom: 3em;
+}
+article img {
+    width: 50%;
+}
