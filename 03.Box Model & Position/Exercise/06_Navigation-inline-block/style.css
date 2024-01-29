@@ -1,0 +1,38 @@
+html {
+    font: 14px/1.5 Helvetica, san-serif;
+    margin: 0;
+    padding: 0;
+}
+body,
+header,
+main,
+span {
+    font: inherit;
+}
+body {
+    margin: 2em 4em;
+}
+header {
+    border-bottom: 1px solid black;
+}
+span {
+    font-size: 2em;
+    font-weight: 700;
+    margin-right: 2em;
+}
+nav {
+    display: inline-block;
+}
+
+nav ol li {
+    display: inline-block;
+}
+nav ol a {
+    color: rgb(16, 214, 16);
+    padding-inline: 1em;
+    text-decoration: none;
+}
+h1 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: normal;
+}

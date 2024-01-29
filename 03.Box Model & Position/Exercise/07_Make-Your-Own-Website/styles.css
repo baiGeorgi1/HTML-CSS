@@ -1,1 +1,25 @@
-/* TODO: style the html */
+html {
+    margin: 0;
+    padding: 0;
+    font: 16px/1.5 "Times New Roman", Times, serif;
+}
+body,
+div {
+    font: inherit;
+}
+div {
+    width: 17.5em;
+    display: inline-block;
+    padding: 1em 2em 1em 1em;
+    margin-top: 1.25em;
+    background-color: #0a2c48;
+    color: #fff;
+    border-radius: 0.25em;
+}
+div:hover {
+    background-color: #2a4c68;
+}
+p {
+    color: #c9d6ff;
+    font-size: 1.125em;
+}
