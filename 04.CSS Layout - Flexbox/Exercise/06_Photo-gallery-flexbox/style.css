@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    padding: 4em;
+}
+
+img {
+    max-width: 20em;
+    height: auto;
+}
+.gallery ul {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    flex-grow: 1;
+    gap: 2em;
+}
+li {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    list-style: none;
+    border: 0.5em solid rgb(0, 0, 0);
+}
