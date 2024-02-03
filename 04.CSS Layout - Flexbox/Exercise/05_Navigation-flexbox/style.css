@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font: 16px/1.5 Helvetica, sans-serif;
+}
+body {
+    padding: 3em;
+    margin: 3em 1em 1em 3em;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    padding-bottom: 1em;
+}
+header > span {
+    font-size: 2.6em;
+    text-transform: uppercase;
+    font-weight: 550;
+}
+header nav > ul {
+    display: flex;
+}
+
+li {
+    padding: 1em;
+    font-size: 1em;
+    list-style: none;
+}
+a {
+    color: rgb(0, 153, 0);
+    text-decoration: none;
+}
+main {
+    padding-top: 1.5em;
+}
+main p {
+    margin: 1em auto;
+}
+h1 {
+    font: 2em/1.5 Georgia, serif;
+}
