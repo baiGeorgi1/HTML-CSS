@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 16px/1.5 Arial, san-serif;
+}
+body {
+    background-color: rgb(238, 238, 238);
+    padding: 3em;
+}
+p,
+ul {
+    padding-bottom: 1.5em;
+}
+h1,
+h2,
+h3 {
+    font-family: Georgia, serif;
+    font-weight: 500;
+}
+h1 {
+    font-size: 1.6em;
+    line-height: 2;
+}
+h2 {
+    font-size: 1.4em;
+    line-height: 2;
+}
+h3 {
+    font-size: 1.2em;
+    line-height: 2;
+}
+aside ul {
+    padding: 1em;
+}
+aside ul li {
+    list-style-position: inside;
+}
+a {
+    color: rgb(0, 153, 0);
+    text-decoration: none;
+}
+img {
+    border: 3px solid #000;
+    padding: 0.8em;
+    background-color: #fff;
+    box-shadow: 0 0 1em 0.2em rgb(0, 0, 0, 0.5) inset;
+}
+blockquote {
+    opacity: 0.7;
+    border-left: 3px solid #848383;
+    font-style: italic;
+    max-width: 50%;
+    padding-left: 1em;
+    margin-left: 1em;
+}
+blockquote p:last-child {
+    text-align: right;
+}
+
+.page {
+    max-width: 60em;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+.page > header {
+    width: 100vw;
+    flex-grow: 1 0 100%;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-bottom: 0.4em;
+    border-bottom: 2px solid #000;
+}
+.page main {
+    flex: 1 0 65%;
+}
+.page aside {
+    flex: 1 1 auto;
+}
+.align-right {
+    float: right;
+    margin: 0 0 1em 1em;
+}
+.align-left {
+    float: left;
+    margin: 1em 1em 1em 0;
+}
