@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    background-color: #eee;
+    padding: 5rem;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+header,
+main,
+aside,
+footer {
+    padding: 2rem;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid grey;
+    border-radius: 0.4rem;
+    box-shadow: 0 0 0.4em black;
+}
+header,
+footer {
+    width: 100vw;
+}
+body > main,
+body > aside {
+    min-height: 300px;
+}
+
+main {
+    flex: 1 0 65%;
+}
+aside {
+    flex: 1 1 auto;
+}
+
+p {
+    text-transform: uppercase;
+}

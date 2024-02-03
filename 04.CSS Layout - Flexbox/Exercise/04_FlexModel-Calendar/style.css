@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    padding: 3em;
+    text-align: center;
+}
+
+
+.container {
+    min-width: 660px;
+    display: flex;
+    margin: 0 auto;
+    max-width: 65vw;
+}
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+section > span {
+    border: 1px solid black;
+    padding: 1em 0.5em 4em 0.5em;
+    flex-grow: 1;
+}
+.week {
+    flex-wrap: wrap;
+    flex: 1 0 70%;
+}
+
+.week span:nth-child(1),
+.week span:nth-child(7) {
+    flex: 1 0 100%;
+
+}
+
+
+/*• Change the div and sections display property to flex and align the items in center 
+
+• The span must have
+    o Border width - 1px o Border color - black 
+    o Border style - solid 
+    • For the section with class notes use the property flex-direction column 
+
