@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+body {
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2em;
+}
+.list {
+    display: flex;
+    gap: 1em;
+}
+.card {
+    flex: 0 0 60px;
+    width: 6em;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 0 0.5em 0.2em rgb(0, 0, 0, 0.4);
+    border-radius: 0.5em;
+    transition: all 0.8s ease-in;
+}
+.card > img {
+    width: auto;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 0.5em;
+
+    transform: translate(-50%, -50%);
+}
+.card:hover {
+    border-left: 0.8em solid black;
+    border-right: 0.8em solid black;
+    border-radius: 1.2em;
+    flex: 0 0 400px;
+    height: 300px;
+    cursor: pointer;
+}
