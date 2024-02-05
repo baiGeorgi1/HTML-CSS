@@ -11,7 +11,9 @@ HTML &amp; CSS course - January 2024
     2. [The CSS Box Model](#2-the-css-box-model)
     3. [Position](#3-position)
     4. [Resourses](#4-resourcesbox-model--position)
-4. [CSS Layout - Flexbox]()
+4. [CSS Layout - Flexbox](#4-css-layout---flexbox)
+    1. [Flexbox Properties](#flexbox-properties)
+    2. [Resources](#resources-css-layout---flexbox)
 
 ---
 
@@ -300,6 +302,8 @@ HTML &amp; CSS course - January 2024
     -   some zip files with solutions (homework)
     -   more exercises
 
+[Back](#contents)
+
 ## 2. Typography in CSS.
 
 1.  **What is Typography?** - Typography is the art and technique of arranging type to
@@ -352,7 +356,7 @@ HTML &amp; CSS course - January 2024
         -   font-weight: 700 - weight of the font
         -   line-height: 1.5 - space between lines
 
-[BACK](#contents)
+[Back](#contents)
 
 ## 3. Box Model & Positioning
 
@@ -529,7 +533,108 @@ HTML &amp; CSS course - January 2024
     - https://css-tricks.com/almanac/properties/p/position/
     - https://css-tricks.com/position-sticky-2/
 
-[BACK](#contents)
+[Back](#contents)
+
+## 4. CSS Layout - Flexbox
+
+> The Flexible Box Module, usually referred to as flexbox, was designed as a one-dimensional layout model, and as a method that could offer space distribution between items in an interface and powerful alignment capabilities.
+>
+> -   https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox
+
+> For a long time, the only reliable cross browser-compatible tools available for creating CSS layouts were things like floats and positioning.
+>
+> -   These are fine and they work, but in some ways, they are also rather limiting and frustrating.
+
+> Flexbox can be look at as a logical system to arrange boxes in 2 dimensions
+
+> There are many places where an understanding of the ideas of Flexbox will be very useful.
+
+> For elements to be laid out as flexible boxes we set a special value of display on the parent element of the elements you want to affect.
+
+> This causes the element to become a flex container and its children to become flex items.
+
+> When elements are laid out as flex items, they are laid out along two axes:
+
+<p align="center"><img src="https://www.webcodzing.com/uploads/2021/06/css-flexbox-example-1.jpg" height=150px ></p>
+
+#### The Flex Model
+
+<img src="https://www.sitepoint.com/wp-content/uploads/2015/11/1446603112flexbox.png" height=250px>
+
+#### **Flexbox properties**
+
+> Complexity and the value of reference
+>
+> -   The entire specification with all possible properties that are related to flexbox can be overwhelming, especially in the beginning
+> -   Don't try to learn and remember everything
+> -   Try to understand the basic concepts – the properties will be learned through exercise and repetition
+> -   https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+_Container and Item properties:_
+
+-   We can separate the collection of properties related to Flexbox in to two main categories.
+-   Properties that are applied to the Flex container and properties applied to the Flex items.
+
+1. _Flex Container_
+
+    1. **display: flex;**
+        - We set a value of 'flex' to the display property on the parent element of the elements you want to affect.
+    2. **flex-direction: column || row**
+
+        - Flexbox provides a property called flex-direction that specifies which direction the main axis runs (which direction the flexbox children are laid out in)
+        - By default, this is set to row, which causes them to be laid out in a row in the direction your browser's default language works in
+
+        <img src="https://www.vzhurudolu.cz/prirucka-content/dist/images/original/vdlayout/css-flex-direction.jpg?2">
+
+    3. **flex-wrap**
+
+        - One issue that arises when you have a fixed width or height in your layout is that eventually your flexbox children will overflow their container, breaking the layout.
+
+        <img src="https://byteiota.com/wp-content/uploads/2020/11/flex-wrap-modify.png" width=50%>
+
+    4. **justify-content**
+
+        - Defines how the browser distributes space between and around content items along the main-axis of a flex container, and the inline axis of a grid container.
+
+        <img src="https://semicolon.dev/static/css-flex-justify-content-all-examples-reference.png" width=50%>
+
+    5. **align-items**
+
+        - Sets the align-self value on all direct children as a group
+        - In Flexbox, it controls the alignment of items on the Cross Axis
+
+        <img src="https://www.freecodecamp.org/news/content/images/2021/06/align-items-1.png">
+
+    6. **gap**
+        - Sets the gaps (gutters) between rows and columns
+
+2. _Flex Item_
+
+    1. **order**
+        - Sets the order to lay out an item in a flex container
+        - Items in a container are sorted by ascending order value and then by their source code order.
+    2. **flex-grow**
+
+        - Sets the flex grow factor, which specifies how much of the flex container's remaining space should be assigned to the flex item's main size.
+
+        <img src="https://miro.medium.com/v2/resize:fit:1400/1*43faUXdI5KbcSb_LbXO-Ng.png">
+
+    3. **flex-shrink**
+        - Sets the flex shrink factor of a flex item
+        - If the size of all flex items is larger than the flex container,items shrink to fit according to flex-shrink.
+    4. **flex-basis**
+        - Sets the initial main size of a flex item
+        - It sets the size of the content box unless otherwise set with box-sizing.
+
+#### **Resources: CSS Layout - Flexbox**
+
+-   https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox
+-   https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
+-   https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+-   https://www.youtube.com/watch?v=hs3piaN4b5I
+-   https://www.flexboxgame.com/
+
+[Back](#contents)
 
 ## Demo
 
