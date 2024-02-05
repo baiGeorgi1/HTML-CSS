@@ -332,7 +332,20 @@ HTML &amp; CSS course - January 2024
         -   The em is a sliding measure. One em is a distance equal to the type size.
         -   In 6-point type, an em is 6 points; in 12 point type an em is 12 points and in 60 point type an em is 60 points.
 
-3.  **CSS Properties** - _color & background_ - comes together! - _text:_ - text-align: ... - left,right,cener ... - text-decoration: ... - decorate the text - text-indent: ... - move the text with space - text-overflow: ... - if the text is more than the box - text-shadow: ... - shadow of the text - _font:_ - font-family: ... - type of the font - font-size: ... - font size - font-style: ... - style of the font - font-weight: ... - weight of the font - line-height: ... - space between lines
+3.  **CSS Properties**
+    -   _color & background_ - comes together!
+    -   _text:_
+        -   text-align: left,right,center ...
+        -   text-decoration: - decorate the text
+        -   text-indent: - move the text with space
+        -   text-overflow: - if the text is more than the box
+        -   text-shadow: 0 0 5px black - shadow of the text
+    -   _font:_
+        -   font-family: serif etc. - type of the font
+        -   font-size: 2em - font size
+        -   font-style: italic - style of the font
+        -   font-weight: 700 - weight of the font
+        -   line-height: 1.5 - space between lines
 
 [BACK](#contents)
 
