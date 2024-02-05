@@ -7,6 +7,11 @@ HTML &amp; CSS course - January 2024
 1. [Introduction to HTML & CSS.](#1-introduction-to-html--css)
 2. [Typography in CSS.](#2-typography-in-css)
 3. [Box Model & Positioning](#3-box-model--positioning)
+    1. [What is Box Model?](#1-what-is-box-model)
+    2. [The CSS Box Model](#2-the-css-box-model)
+    3. [Position](#3-position)
+    4. [Resourses](#4-resourcesbox-model--position)
+4. [CSS Layout - Flexbox]()
 
 ---
 
@@ -282,8 +287,8 @@ HTML &amp; CSS course - January 2024
         <img src="https://cdn.rawgit.com/MakeSchool-Tutorials/sa-2018-landing-page/master/P06-CSS-Inheritance-And-Specificity/assets/class_specificity_value.png" width=450px >
 
     -   Cascade Order - in increasing order of priority.
-        1. External <link>
-        2. In the <head>
+        1. External `<link>`
+        2. In the `<head>`
         3. Inline style attribute
         4. Using !importan
 
@@ -327,7 +332,7 @@ HTML &amp; CSS course - January 2024
 
         -   Ems are so-called because they are thought to approximate the size of an uppercase letter M, although 1em is significantly larger than this.
 
-         <img src="https://www.pc-koubou.jp/magazine/wp-content/uploads/2019/10/css_rem_main2.png" width=350>
+         <img src="https://www.pc-koubou.jp/magazine/wp-content/uploads/2019/10/css_rem_main2.png" width=350px>
 
         -   The em is a sliding measure. One em is a distance equal to the type size.
         -   In 6-point type, an em is 6 points; in 12 point type an em is 12 points and in 60 point type an em is 60 points.
@@ -350,6 +355,179 @@ HTML &amp; CSS course - January 2024
 [BACK](#contents)
 
 ## 3. Box Model & Positioning
+
+#### 1. **What is Box Model?**
+
+-   When laying out a document, the browser's rendering engine represents each element as a rectangular box according to the standard CSS basic box model.CSS determines the size, position, and properties (color,background, border size, etc.) of these boxes.
+
+    [...more info](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model)
+
+      <img src="https://www.webcodzing.com/uploads/2021/06/box-model.jpg" width= 50% >
+
+    -   _Display:_ - The display CSS property defines the display type of an element, which consists of the two basic qualities of how an element generates boxes.
+
+        -   the outer display type defining how the box participates in flow layout;
+
+        -   he inner display type defining how the children of the box are laid out;
+            <img src="https://miro.medium.com/v2/resize:fit:828/1*8-ZiQE4l2YY_ddk5yW8Ujg.png" height=250px>
+
+        1.  display: block;
+            -   TML elements historically were categorized as either "block-level" elements or "inline" elements.
+            -   By default, a block-level element occupies the entire space of its parent element (container), thereby creating a "block".
+            -   Browsers typically display the block-level element with a newline both before and after the element.
+            -   You can visualize them as a stack of boxes.
+        2.  display: inline;
+            -   Inline elements are those which only occupy the space bounded by the tags defining the element, instead of breaking the flow of the content.
+        3.  display: inline-block;
+            -   Gives us the ability to use vertical padding and margin on inline elements as well as adding width and height.
+
+    -   _Width:_ - The width CSS property sets an element's width. By default,it sets the width of the content area, but if box-sizing is set to border-box, it sets the width of the border area.
+
+        [more info...](https://interactive-examples.mdn.mozilla.net/pages/css/width.html)
+
+        1. Default width of block elements:
+            - If you don't declare a width, and the box has static or relative positioning, the width will remain 100% in width and the padding and border will push inwards instead of outward.
+            - If you explicitly set the width of the box to be 100%, the padding will push the box outward as normal.
+        2. min-width: ...px || em;
+            - The min-width CSS property sets the minimum width of an element.
+            - It prevents the used value of the width property from becoming smaller than the value specified for min-width.
+        3. max-width: ...px || em;
+            - The max-width CSS property sets the maximum width of an element.
+            - It prevents the used value of the width property from becoming larger than the value specified by max-width.
+
+    -   _Height:_ - The height CSS property specifies the height of an element.By default, the property defines the height of the content area.If box-sizing is set to border-box, however, it instead determines
+        the height of the border area.
+
+        [more info...](https://interactive-examples.mdn.mozilla.net/pages/css/height.html)
+
+        1. min-height: ...px || em;
+            - The min-height CSS property sets the minimum height of an element.
+            - It prevents the used value of the height property from becoming smaller than the value specified for min-height.
+        2. max-height: ...px || em;
+            - The max-height CSS property sets the maximum height of an element.
+            - It prevents the used value of the height property from becoming larger than the value specified for max-height.
+
+    -   _Margin:_
+
+        -   The margin CSS property sets the margin area on all four sides of an element.
+        -   It is a shorthand for margin-top, margin-right,margin-bottom,and margin-left.
+
+        [more info...](https://interactive-examples.mdn.mozilla.net/pages/css/margin.html)
+
+    -   _Border:_
+
+        -   The border CSS property sets an element's border.
+        -   It's a shorthand for border-width, border-style, and border-color.
+
+        [more info...](https://interactiveexamples.mdn.mozilla.net/pages/css/border.html)
+
+    -   _Padding:_
+
+        -   The padding CSS property sets the padding area on all four sides of an element.
+        -   It is a shorthand for padding-top, padding-right, padding-bottom,and padding-left.
+
+        [more info...](https://interactiveexamples.mdn.mozilla.net/pages/css/padding.html)
+
+#### 2. **The CSS Box Model**
+
+-   Block and Inline boxes:
+
+    -   In CSS we have several types of boxes that generally fit into the categories of block boxes and inline boxes.
+    -   The type refers to how the box behaves in terms of page flow and in relation to other boxes on the page.
+    -   Boxes have an inner display type and an outer display type.
+    -   In general, you can set various values for the display type using the display property, which can have various values.
+
+    1. Outer display type - Inline:
+
+        - If a box has an outer display type of inline, then:
+            - The box will not break onto a new line;
+            - The width and height properties will not apply;
+            - Top and bottom padding, margins, and borders will apply but will not cause other inline boxes to move away from the box;
+            - Left and right padding, margins, and borders will apply and will cause other inline boxes to move away from the box;
+            - Some HTML elements, such as `<a>`, `<span>`, `<em>` and `<strong>` use inline as their outer display type by default.
+        - The CSS box model defines how the different parts of a box — margin,border, padding, and content — work together to create a box that you can see on a page;
+
+            - Inline boxes use just some of the behavior defined in the box model.
+
+        - To add complexity, there is a standard and an alternate box model;
+            - By default, browsers use the standard box model.
+
+    2. Parts of a box:
+
+    -   Making up a block box in CSS we have the:
+
+        -   **Content box**: The area where your content is displayed; size it using properties like inline-size and block-size or width and height;
+        -   **Padding box**: The padding sits around the content as white space; size it using padding and related properties;
+        -   **Border box**: wraps the content and any padding; size it using border and related properties;
+        -   **Margin box**: the outermost layer, wrapping the content,padding, and border as whitespace between this box and other elements; size it using margin and related properties;
+
+            <img src="https://uploads.sitepoint.com/wp-content/uploads/2017/04/1492576965BoxModel1.png"  width=350px>
+
+    -   In the standard box model, if you give a box an inline-size and a block-size (or width and a height) attributes, this defines the inlinesize and block-size (width and height in horizontal languages) of the content box;
+        -   Any padding and border is then added to those dimensions to get the total size taken up by the box.
+        -   If we assume that a box has the following CSS:
+            -   The actual space taken up by the box will be 410px wide (350 + 25 + 25 + 5 + 5) and 210px high (150 + 25 + 25 + 5 + 5).
+    -   In the alternative box model, any width is the width of the visible box on the page;
+
+        -   The content area width is that width minus the width for the padding and border (see image below)
+        -   No need to add up the border and padding to get the real size of the box.
+        -   To turn on the alternative model for an element use:</br>
+            `.box{box-sizing:border-box;}`
+        -   If we assume the box has the same CSS as above:
+            -   Now, the actual space taken up by the box will be 350px in the inline direction and 150px in the block direction.
+
+        <img src="https://i.stack.imgur.com/4IT0d.png">
+
+#### 3. **Position**
+
+> The position property specifies the type of positioning method used for an element (static, relative, fixed, absolute or sticky)
+
+> Elements are then positioned using the top, bottom, left, and right properties
+
+> However, these properties will not work unless the position property is set first. They also work differently depending on the position value.
+
+[more info...](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
+
+1. **position:static**;
+    - The default state of every element — it just means"put the element into its normal position in the document layout flow — nothing special to see here."
+2. **position: relative;**
+    - Very similar to static positioning, except that once the positioned element has taken its place in the normal layout flow, you can then modify its final position, including making it overlap other elements on the page.
+3. **position: absolute;**
+    - This way we have to position the element based on a two dimentional coordinate system.
+    - We can use left, top, bottom, right to place the element exactly where we want.
+4. **position: fixed;**
+    - The element is removed from the normal document flow, and no space is created for the element in the page layout.
+    - The element is positioned relative to its initial containing block, which is the viewport in the case of visual media.
+    - Its final position is determined by the values of top, right, bottom, and left.
+    - This value always creates a new stacking context.
+    - In printed documents, the element is placed in the same position on every page.
+5. **position: sticky**
+    - The element is positioned according to the normal flow of the document,and then offset relative to its nearest scrolling ancestor and containing block (nearest block-level ancestor), including table-related elements,based on the values of top, right, bottom, and left.
+    - The offset does not affect the position of any other elements.
+    - This value always creates a new stacking context.
+    - Note that a sticky element "sticks" to its nearest ancestor that has a "scrolling mechanism" (created when overflow is hidden, scroll, auto, or overlay), even if that ancestor isn't the nearest actually scrolling ancestor.
+6. **z-index**
+    - The z-index CSS property sets the z-order of a positioned element and its descendants or flex items.
+    - Overlapping elements with a larger z-index cover those with a smaller one.
+    - [more info...](https://interactive-examples.mdn.mozilla.net/pages/css/z-index.html)
+
+#### **4. Resources:Box model & Position**
+
+1. Box Model:
+    - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model
+    - https://developer.mozilla.org/en-US/docs/Web/CSS/display
+    - https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
+    - https://css-tricks.com/the-css-box-model
+    - https://css-tricks.com/box-sizing
+    - https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+2. Position:
+    - https://developer.mozilla.org/en-US/docs/Web/CSS/position
+    - https://developer.mozilla.org/en-US/docs/Web/CSS/z-index
+    - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_positioned_layout/Understanding_z-index
+    - https://interactive-examples.mdn.mozilla.net/pages/css/position.html
+    - https://css-tricks.com/video-screencasts/198-about-the-position-property/
+    - https://css-tricks.com/almanac/properties/p/position/
+    - https://css-tricks.com/position-sticky-2/
 
 [BACK](#contents)
 
