@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 16px/1.5 "Times New Roman", Times, serif;
+}
+body {
+    display: flex;
+}
+.site {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    gap: 1em;
+    width: 100vw;
+}
+
+header,
+main,
+aside,
+footer {
+    background-color: #9abdfd;
+    padding: 1em 2em;
+    border-radius: 0.2em;
+    overflow: hidden;
+}
+
+main {
+    flex: 0 0 25%;
+    padding: 1em;
+}
+main ul li {
+    list-style: none;
+}
+main ul li a {
+    text-decoration: none;
+}
+aside {
+    flex: 1 1 auto;
+}
+
+@media (min-width: 500px) {
+    body {
+        display: flex;
+    }
+    .site {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    Header,
+    footer {
+        width: 100vw;
+    }
+}
