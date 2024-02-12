@@ -1,0 +1,11 @@
+aside {
+    flex-direction: column;
+}
+aside h1 {
+    padding-left: 1em;
+}
+aside ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 3em;
+}

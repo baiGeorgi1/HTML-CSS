@@ -1,0 +1,12 @@
+main * {
+    padding-left: 0.5em;
+}
+main ul {
+    list-style: none;
+}
+.ul-main li {
+    padding: 0.2em;
+}
+.ul-main a {
+    color: rgb(75, 6, 139);
+}

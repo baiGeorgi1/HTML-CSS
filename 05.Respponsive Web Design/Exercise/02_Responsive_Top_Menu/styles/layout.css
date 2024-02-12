@@ -1,0 +1,30 @@
+body {
+    padding: 0.5em;
+}
+.site {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    flex-wrap: wrap;
+}
+header,
+main,
+aside,
+footer {
+    display: flex;
+    background-color: rgb(113, 180, 247);
+    border-radius: 0.3em;
+    flex: 1 0 100%;
+}
+header,
+main,
+aside {
+    padding-block: 1em;
+}
+footer {
+    height: 5vh;
+    text-align: left;
+}
+a {
+    text-decoration: none;
+}

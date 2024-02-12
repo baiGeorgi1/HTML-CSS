@@ -1,0 +1,7 @@
+header {
+    flex-direction: column;
+    height: 30vh;
+}
+header h1 {
+    padding: 0 0 1em 1em;
+}

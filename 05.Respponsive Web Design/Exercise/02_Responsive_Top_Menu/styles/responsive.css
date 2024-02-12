@@ -1,0 +1,12 @@
+@media (min-width: 500px) {
+    .site {
+        flex-direction: row;
+    }
+
+    main {
+        flex: 1 0 20%;
+    }
+    aside {
+        flex: 1 1 70%;
+    }
+}

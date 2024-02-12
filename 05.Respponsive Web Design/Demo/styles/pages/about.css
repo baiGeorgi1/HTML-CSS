@@ -11,6 +11,14 @@
     gap: 2em;
     flex-direction: column;
 }
+@container (min-width: 800px) {
+    .section-about {
+        flex-direction: row;
+    }
+    .section-aboutn figure {
+        flex: 0 0 200px;
+    }
+}
 /* .section-about img {
     margin-bottom: 1em;
 } */
@@ -22,12 +30,4 @@
 .section-about figure figcaption {
     padding: 0.7em 1em;
     line-height: 1;
-}
-@container (min-width: 800px) {
-    .section-about {
-        flex-direction: row;
-    }
-    .section-aboutn figure {
-        flex: 0 0 200px;
-    }
 }
