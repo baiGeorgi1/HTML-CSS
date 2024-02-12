@@ -1,3 +1,17 @@
+@media (min-width: 500px) {
+    body {
+        display: flex;
+    }
+    .site {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    Header,
+    footer {
+        width: 100vw;
+    }
+}
 * {
     padding: 0;
     margin: 0;
@@ -40,19 +54,4 @@ main ul li a {
 }
 aside {
     flex: 1 1 auto;
-}
-
-@media (min-width: 500px) {
-    body {
-        display: flex;
-    }
-    .site {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-    }
-    Header,
-    footer {
-        width: 100vw;
-    }
 }
