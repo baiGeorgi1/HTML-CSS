@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login Form</title>
+        <link rel="stylesheet" href="./styles/login.css" />
+    </head>
+    <body>
+        <section class="viewport">
+            <form action="" method="get">
+                <div class="field">
+                    <input
+                        type="text"
+                        name="username"
+                        id="username"
+                        placeholder="username"
+                        required
+                    />
+                    <label for="username">Username:</label>
+                    <span class="field helper">Atleast 8 characters needed!</span>
+                </div>
+                <div class="field">
+                    <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        placeholder="password"
+                        required
+                    />
+                    <label for="password">Password:</label>
+                    <span class="field helper"
+                        >Atleast 8 characters needed (1special character)!</span
+                    >
+                </div>
+                <input type="submit" name="submit" id="" value="Login" />
+            </form>
+        </section>
+    </body>
+</html>

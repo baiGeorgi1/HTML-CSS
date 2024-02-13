@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Demo</title>
+    </head>
+    <body>
+        <h1>Working with Forms</h1>
+        <!-- Redirect to login -->
+        <a href="#login-form">Login</a>
+        <h2>Search by Google</h2>
+        <form action="https://www.google.com/search" method="get">
+            <label for="search-field">Search for:</label>
+            <input type="text" value="" name="q" id="search-field" />
+            <input type="submit" value="search" />
+        </form>
+        <h2>Radio Buttons</h2>
+        <form action="#" method="get">
+            <p>Pick your poison:</p>
+            <input type="radio" name="poison" value="option1" id="poison-option1" />
+            <label for="poison-option1">Option 1</label>
+            <input type="radio" name="poison" value="option2" id="poison-option2" checked />
+            <label for="poison-option2">Option 2</label>
+            <input type="radio" name="poison" value="option3" id="poison-option3" />
+            <label for="poison-option3">Option 3</label>
+            <p><input type="submit" value="Let's go!" /></p>
+        </form>
+        <h2>Checkboxes</h2>
+        <form action="#" method="get">
+            <p>Pick your poison:</p>
+            <input
+                type="checkbox"
+                name="poison"
+                value="checkbox-option1"
+                id="poison2-option1"
+                checked
+            />
+            <label for="poison2-option1">Option 1</label>
+
+            <input type="checkbox" name="poison" value="checkbox-option2" id="poison2-option2" />
+            <label for="poiso2n-option2">Option 2</label>
+
+            <input type="checkbox" name="poison" value="checkbox-option3" id="poison2-option3" />
+            <label for="poison2-option3">Option 3</label>
+
+            <p>
+                <select name="city" id="">
+                    <option>Choose a city...</option>
+                    <option value="Sofia">Sofia</option>
+                    <option value="Plovdiv">Plovdiv</option>
+                    <option value="Etropole" selected>Etropole</option>
+                    <option value="Varna">Varna</option>
+                </select>
+            </p>
+            <p><input type="submit" value="Let's go!" /></p>
+        </form>
+        <h2>Fieldset & Legend</h2>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>My first form</legend>
+                <p>Pick your poison:</p>
+                <input type="radio" name="poison" value="option1" id="poison-option1" />
+                <label for="poison-option1">Option 1</label>
+                <input type="radio" name="poison" value="option2" id="poison-option2" checked />
+                <label for="poison-option2">Option 2</label>
+                <input type="radio" name="poison" value="option3" id="poison-option3" />
+                <label for="poison-option3">Option 3</label>
+            </fieldset>
+            <fieldset>
+                <legend>My Second Form</legend>
+                <p>
+                    <input type="email" name="" id="" required />
+                </p>
+                <h4>Range button</h4>
+                <p>
+                    <input type="range" name="range" min="0" max="10" />
+                </p>
+            </fieldset>
+            <p><input type="submit" value="Let's go!" /></p>
+        </form>
+        <h2>Classic Form</h2>
+        <form id="login-form" action="#">
+            <input type="text" name="username" id="username" placeholder="username" required />
+
+            <input type="password" id="password" required />
+
+            <input type="submit" value="login" />
+        </form>
+    </body>
+</html>
