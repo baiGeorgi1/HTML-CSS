@@ -1,0 +1,19 @@
+.navigation {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.navigation ul li {
+    display: inline-block;
+    list-style: none;
+    position: relative;
+}
+.navigation a {
+    margin-inline-end: 1em;
+    text-align: right;
+    color: rgb(0, 102, 0);
+    text-decoration: none;
+    display: inline-block;
+}
