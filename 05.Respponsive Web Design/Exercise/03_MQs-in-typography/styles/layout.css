@@ -1,0 +1,65 @@
+body {
+    display: block;
+    position: relative;
+    background-color: rgb(238, 238, 238);
+    padding: 4em;
+}
+.site-main {
+    display: inline-block;
+    width: 100%;
+}
+
+.site-header {
+    position: relative;
+    border-bottom: 3px solid rgb(0, 0, 0);
+}
+header p {
+    display: inline-block;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 100%;
+}
+blockquote {
+    margin: 0.5em;
+    width: 50%;
+    float: right;
+    border-left: 3px solid rgb(0, 0, 0, 0.4);
+}
+blockquote p {
+    padding: 1.5em;
+    font-style: italic;
+    color: rgb(0, 0, 0, 0.4);
+}
+img {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 5px rgb(0, 0, 0, 1) inset;
+}
+p.author {
+    text-align: end;
+}
+.main-section {
+    position: relative;
+    /* display: block; */
+}
+.main-section p {
+    padding-bottom: 1em;
+}
+.main-header h1,
+h2 {
+    padding: 0.8em 0 0.5em 0;
+}
+.float-right {
+    margin: 0 0 0.5em 1em;
+    padding: 0.5em;
+    width: 150px;
+    border: 3px solid black;
+    float: right;
+}
+.float-left {
+    margin: 0 0.5em 0.5em 0;
+    padding: 0.5em;
+    width: 150px;
+    border: 3px solid black;
+    float: left;
+}

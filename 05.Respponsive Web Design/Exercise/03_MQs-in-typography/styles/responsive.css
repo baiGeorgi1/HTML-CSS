@@ -1,0 +1,43 @@
+@media (max-width: 500px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.75em;
+    }
+    blockquote {
+        width: 100%;
+    }
+
+    img {
+        float: none;
+    }
+    .main-section {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (min-width: 500px) {
+    body {
+        font-size: 0.9em;
+    }
+}
+@media (min-width: 600px) {
+    body {
+        font-size: 1em;
+    }
+}
+@media (min-width: 800px) {
+    body {
+        font-size: 1.13em;
+    }
+}
+@media (min-width: 1300px) {
+    body {
+        font-size: 1.3em;
+    }
+}
+@media (min-width: 1800px) {
+    body {
+        font-size: 1.5em;
+    }
+}

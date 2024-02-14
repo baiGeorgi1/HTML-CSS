@@ -1,0 +1,17 @@
+aside {
+    display: inline-block;
+    width: 25%;
+    position: absolute;
+    padding: 2em 0 0 3em;
+}
+
+aside h3 {
+    padding-bottom: 0.5em;
+}
+.aside-nav ul {
+    padding-left: 2em;
+}
+.aside-nav a {
+    text-decoration: none;
+    color: rgb(0, 102, 0);
+}
