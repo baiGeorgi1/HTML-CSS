@@ -1,0 +1,23 @@
+body {
+    display: block;
+}
+main {
+    display: inline-block;
+    position: relative;
+    width: 700px;
+    height: 500px;
+    margin: 60px;
+}
+
+.new {
+    position: relative;
+    display: inline;
+    width: 200px;
+    right: 150px;
+    top: -200px;
+    z-index: 1;
+}
+.cup {
+    display: inline;
+    width: 320px;
+}

@@ -1,1 +1,17 @@
-//TODO
+/* @import url("reset.css"); */
+
+body {
+    display: block;
+    padding: 2em;
+}
+h1 {
+    position: absolute;
+    top: 60px;
+    left: 180px;
+    /* top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%); */
+
+    color: antiquewhite;
+    text-shadow: 1px 1px 20px black;
+}
