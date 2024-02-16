@@ -1,0 +1,160 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+
+@import url("https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+html {
+    font: 16px/1.5 "PT Serif";
+}
+body {
+    font: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "PT Sans";
+}
+h1 {
+    font-size: 3.75em;
+    letter-spacing: 0.2em;
+}
+h2 {
+    font-size: 2em;
+}
+h3 {
+    font-size: 1.8em;
+}
+h4 {
+    font-size: 1.6em;
+}
+h5 {
+    font-size: 1.2em;
+}
+h6 {
+    font-size: 1em;
+}
+
+.site {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.site-header,
+.site-footer {
+    flex: 1 0 100%;
+    background-color: red;
+}
+.site-header {
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.site-header i {
+    padding-right: 0.5em;
+}
+
+.site-footer p {
+    text-align: center;
+    padding-block: 0.2em;
+}
+.main {
+    flex-wrap: wrap;
+    color: white;
+    height: 600px;
+    background-image: url("./image/fitness-main.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main nav {
+    flex: 1 0 100%;
+    display: flex;
+    padding: 2em;
+    justify-content: right;
+}
+.main nav ul {
+    display: flex;
+    gap: 5em;
+}
+.main nav ul li {
+    display: flex;
+    display: inline-block;
+}
+.main nav a,
+a.button {
+    text-decoration: none;
+    color: white;
+    padding-inline: 1em;
+}
+.main-article {
+    margin: 0 auto;
+    max-width: 800px;
+    padding-top: 10em;
+    text-align: center;
+}
+.main-article h1 {
+    padding-bottom: 1em;
+    text-shadow: white 1px 0 2px;
+}
+.main-article p {
+    letter-spacing: 0.1em;
+}
+
+a.button {
+    margin-top: 2em;
+    width: 200px;
+    display: inline-block;
+    padding: 0.5em;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+}
+.welcome,
+.coaches {
+    justify-content: space-around;
+    display: flex;
+
+    flex-wrap: wrap;
+}
+
+h2 {
+    flex: 1 0 100%;
+    text-align: center;
+    border-bottom: 3px solid red;
+    border-width: 10px auto;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 300px;
+    align-items: center;
+    padding: 1em 0 2em;
+    text-align: center;
+}
+.welcome .box img {
+    max-width: 50px;
+}
+.welcome h5,
+.coaches h5 {
+    padding: 0.5em;
+    color: red;
+}
+.coaches {
+    background-color: #efefef;
+}
+.coaches p {
+    color: rgb(0, 0, 0, 0.4);
+}

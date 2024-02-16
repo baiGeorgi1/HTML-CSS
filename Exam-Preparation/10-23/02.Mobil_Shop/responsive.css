@@ -1,0 +1,116 @@
+@media (max-width: 600px) {
+    *,
+    *::before,
+    *::after {
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+    }
+    html {
+        font-size: 10px;
+    }
+
+    body,
+    span,
+    .button {
+        font-size: 12px;
+    }
+    .home-main {
+        padding-bottom: 3em;
+    }
+    .home-container {
+        flex-direction: column;
+        padding-top: 0;
+    }
+    .home-navbar {
+        position: static;
+        margin-bottom: 2px;
+    }
+    .home-container01,
+    .home-left,
+    .home-right {
+        display: none;
+    }
+    .navbar-logo-title {
+        padding: 10px;
+    }
+    .navbar-logo-title,
+    .home-content {
+        position: static;
+        font-size: inherit;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .home-header {
+        padding: 10px;
+    }
+    .section-container {
+        flex-wrap: wrap;
+        padding-top: 2em;
+    }
+    .home-hero1 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .home-cards-container {
+        gap: 1em;
+    }
+    .category-card-category-card {
+        max-width: 130px;
+        height: 160px;
+    }
+    .home-container05 {
+        width: 150px;
+        height: 60px;
+        text-align: center;
+    }
+    .Heading-2 {
+        font-size: 24px;
+    }
+    .Heading-3 {
+        font-size: 18px;
+        letter-spacing: 0.3em;
+    }
+
+    .home-text19 {
+        margin: 0;
+    }
+    .home-container07 {
+        margin-top: 50px;
+    }
+    .home-left4 {
+        padding: 1.5em;
+    }
+    .home-text29 {
+        font-size: 20px;
+    }
+    .home-text30 {
+        font-size: inherit;
+    }
+    .button {
+        padding: 6px 12px;
+    }
+    .home-image6 {
+        width: 100%;
+    }
+
+    .home-footer1 .home-container09 {
+        order: 1;
+    }
+    .home-links-container {
+        margin-bottom: 2.5em;
+    }
+    .home-container10,
+    .home-container11,
+    .home-container12 {
+        flex: 0 0 100%;
+    }
+    .home-footer1,
+    .home-links-container {
+        flex-wrap: wrap;
+        padding-top: 2.5em;
+    }
+    .home-text33 {
+        margin-top: 12px;
+    }
+}

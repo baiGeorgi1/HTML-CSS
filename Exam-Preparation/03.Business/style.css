@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Serif");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font: 20px/1.5 "PT Sans", san-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "PT Serif";
+}
+body {
+    background-image: url("./images/background.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.site-section {
+    padding: 2em;
+}
+.site-section.banner {
+    /* background-color: #00052f; */
+    padding-bottom: 8em;
+}
+.site-section.banner h2 {
+    font-size: 3.4em;
+    font-weight: normal;
+    line-height: 1.26;
+    margin-bottom: 1em;
+}
+.site-section.banner p {
+    font-size: 1.2em;
+    max-width: 39.5rem;
+}
+.site-section.banner .container {
+    color: white;
+}
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #00052f; */
+}
+.site-header nav ul {
+    display: flex;
+}
+.site-header nav li {
+    list-style: none outside;
+    padding: 0.5em;
+}
+.site-header nav a {
+    text-decoration: none;
+    color: #fff;
+}
+.site-title a {
+    display: block;
+    width: 130px;
+    height: 110px;
+    overflow: hidden;
+    text-indent: -200vw;
+    background-image: url("images/logo.webp");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.site-section.columns {
+    border-bottom: 2px solid #ccc;
+    background: #fff;
+}
+.site-section.sponsors,
+.site-section.partners {
+    background: #fff;
+    text-align: center;
+}
+
+.column-container {
+    display: flex;
+    gap: 2em;
+}
+
+.site-footer {
+    background: #171720;
+    color: white;
+}
+.site-footer:last-of-type {
+    border-top: 1px solid rgb(255, 255, 255, 0.3);
+}
