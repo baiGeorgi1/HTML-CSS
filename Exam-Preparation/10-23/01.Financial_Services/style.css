@@ -82,7 +82,7 @@ main {
     display: inline-block;
     border: 1px solid #323cc4;
     border-radius: 20px;
-    box-shadow: 0 0 1px 1px white;
+    box-shadow: 0 0 2px 1px white;
     margin: 1.6em 0 1.6em 1.6em;
     background-color: #327dc4;
     color: white;

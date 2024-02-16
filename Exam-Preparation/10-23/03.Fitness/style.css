@@ -124,17 +124,16 @@ a.button {
 .coaches {
     justify-content: space-around;
     display: flex;
-
     flex-wrap: wrap;
 }
 
 h2 {
     flex: 1 0 100%;
     text-align: center;
-    border-bottom: 3px solid red;
-    border-width: 10px auto;
 }
-
+span {
+    border-bottom: 3px solid red;
+}
 .box {
     display: flex;
     flex-direction: column;
