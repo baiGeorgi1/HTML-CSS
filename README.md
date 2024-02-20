@@ -14,6 +14,8 @@ HTML &amp; CSS course - January 2024
 4. [CSS Layout - Flexbox](#4-css-layout---flexbox)
     1. [Flexbox Properties](#flexbox-properties)
     2. [Resources](#resources-css-layout---flexbox)
+5. [Responsive Web Design](#5-responsive-web-design)
+6. [Forms & Working with Forms](#6-forms--working-with-forms)
 
 ---
 
@@ -636,6 +638,162 @@ _Container and Item properties:_
 
 [Back](#contents)
 
+## 5. Responsive Web Design
+
+1.  What is Responsive Web Desgn?
+
+    -   It is an approach to make web pages render well on all screen sizes and resolutions while ensuring good usability.
+    -   It is the way to design for a multi-device web.
+
+    <img src="https://browserstack.wpenginepowered.com/wp-content/uploads/2023/05/holy-grail-3-column-responsive-layout-diagram-small.png" width="350px" height="auto">
+
+2.  Responsive Web Design - How?
+
+    -   Media queries - Allow us to run a series of tests (e.g., whether the user's screen is greater than a certain width, or a certain resolution) and apply CSS selectively to style the page appropriately for the user's needs.
+        <img src="https://www.oreilly.com/api/v2/epubs/9781788395038/files/assets/429e400e-7261-464c-914b-6cdcc944a6f3.png" width="350px" height="auto">
+        <img src="https://internetingishard.netlify.app/how-responsive-websites-work-5f0a33.6f90539d.png" width="250px" heigth="auto" align="baseline" style="padding-left:25px" >
+
+3.  Media Queries
+
+    -   In HTML - Media Queries can be applied to various elements:
+        -   In the link element's media attribute, they define the media to which a linked resource (typically CSS) should be applied
+        -   In the source element's media attribute, they define the media to which that source should be applied (This is only valid inside picture elements.)
+        -   In the style element's media attribute, they define the media to which the style should be applied.
+    -   Media Types:
+
+        -   Media types describe the general category of a given device.
+        -   Although, websites are commonly designed with screens in mind, you may want to create styles that target special devices such as printers or audio-based screen readers.
+
+                      @media print {...}
+                      @media screen,print{...}
+
+    -   @import:
+
+        -   The @import CSS at-rule is used to import style rules from other style sheets.
+        -   These rules must precede all other types of rules, except @charset rules.
+        -   As it is not a nested statement, @import cannot be used inside conditional group at-rules.
+
+                    @impor url("style.css") screen;
+
+    -   Media Features
+
+        -   Media features describe a specific characteristic of the user agent, output device, or environment:
+
+                    @media (min-width:600px){...}
+
+            -   **min-width** - Specifies a minimal width for the viewport in order to apply the rules included
+            -   **max-width** - Specifies a maximum width for the viewport up to which it will apply the rules included
+            -   **Orientation** - Specifies a device orientation for which it will apply therules included
+
+                          @media (orientation:landscape || portrait){...}
+
+            -   **hover** - Checks for a device ability for which it will apply the rules included
+
+                        @media (hover:hover){...}
+
+            -   **pointer** - Checks for a device ability for which it will apply the rules included
+
+                          @media (pointer:fine){...}
+
+    -   Logical operators - The logical operators only can be used to compose a complex media query. You can also combine multiple media queries into a single rule by separating them with commas.
+
+                @media screen and (pointer:fine){...}
+
+        -   **and** - The and operator is used for combining multiple media features together into a single media query, requiring each chained feature to return true in order for the query to be true. It is also used for joining media features with media types.
+        -   **not** - The not operator is used to negate a media query, returning true if the query would otherwise return false. If present in a comma-separated list of queries, it will only negate the specific query to which it is applied. If you use the not operator, you must also specify a media type.
+        -   **only** - The only operator is used to apply a style only if an entire query matches and is useful for preventing older browsers from applying selected styles. If you use the only operator, you must also specify a media type.
+        -   **,** (comma) - Commas are used to combine multiple media queries into a single rule. Each query in a comma-separated list is treated separately from the others. Thus, if any of the queries in a list is true, the entire media statement returns true. In other words, lists behave like a logical or operator.
+
+                    @media (min-width:680px),only screen and (orientation:portrait){...}
+
+4.  Resources:
+
+    -   https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries
+    -   https://developer.mozilla.org/en-US/docs/Web/CSS/@import
+    -   https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Testing_media_queries
+    -   https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#Media_features
+    -   https://caniuse.com/#feat=css-mediaqueries
+    -   https://css-tricks.com/snippets/css/mediaqueries-for-standard-devices/
+    -   https://responsivedesign.is/articles/why-youdont-need-device-specific-breakpoints/
+    -   https://davidwalsh.name/animate-mediaqueries
+    -   https://mediaqueri.es/
+    -   https://responsivedesign.is/
+
+    [Back](#contents)
+
+## 6. Forms & Working with Forms
+
+1. HTML Forms - The HTML form element represents a document section that contains interactive controls for submitting information to a web server.
+
+ <img src="https://internetingishard.netlify.app/form-frontend-and-backend-2a0f80.f3e81924.png" width="350px" height="auto" >
+ <img src="https://i.ytimg.com/vi/MKSQYsLLFEo/maxresdefault.jpg" width="350px" height="auto"  style="float:right" >
+
+2.  Attributes - Method
+
+    > The HTTP method that the browser uses to submit the form.
+
+                  <form action="/server/" method="...">
+
+    -   **post** method - Corresponds to the HTTP POST method. Form data are included in the body of the form and sent to the server.
+
+                  <form action="/server/" method="POST">
+
+    -   **get** method - Form data are appended to the action attribute URI with a '?' as separator, and the resulting URI is sent to the server. Use this method when the form has no side-effects and contains only ASCII characters.
+        <form action="/server/" method="POST">
+
+3.  Label - The HTML label element represents a caption for an item in a user interface.
+
+        <label for='full-name'>Text</label>
+        <input id='full-name' name='some-name' type='text' />
+
+    -   The label text is not only visually associated with its corresponding text input.
+        -   It is programmatically associated with it too.
+    -   You can click the associated label to focus/activate the input, as well as the input itself.
+    -   This increased hit area provides an advantage to anyone trying to activate the input, including those using a touch-screen device.
+
+4.  Input -
+    <img align="right" src="https://i.pinimg.com/400x/01/ce/46/01ce4638e851919d3903f56d4b18fb4b.jpg" width="400px" height="280px">
+
+    -   Used to create interactive controls for web-based forms in order to accept data from the user.
+    -   A wide variety of types of input data and control widgets are available, depending on the device and user agent.
+    -   The `<input>` element is one of the most powerful and complex in all of HTML due to the sheer number of combinations of input types and attributes HTML Form – HTML Tags.
+
+5.  Textarea - Represents a multi-line plain-text editing control, useful when you want to allow users to enter a sizeable amount of free-form text, for example a comment on a review or feedback form.
+
+        <label for="story">Tell us your story:</label>
+        <textarea id="story" name="story" rows="5" cols="33">...</textarea>
+
+6.  Select&option - The `<select>` HTML element represents a control that provides a menu of options. The `<option>` HTML element is used to define an item contained in a `<select>`, an `<optgroup>`, or a `<datalist>` element. As such, `<option>` can represent menu items in popups and other lists of items in an HTML document.
+
+    <img src="https://miro.medium.com/v2/resize:fit:369/1*s0vyZVW_QB9j1JQk61PObQ.png">
+
+7.  Button - Interactive element activated by a user with a mouse, keyboard, finger, voice command, or other assistive technology. Once activated, it then performs an action, such as submitting a form or opening a dialog.
+
+        <button class="Start" type="button">Start</button>
+
+8.  Fieldset&Legend - The HTML fieldset element is used to group several controls
+    as well as labels within a web form.
+
+    <img src="https://i.ytimg.com/vi/2GzVFfGlpeo/maxresdefault.jpg" width="600px">
+
+9.  Resources:
+
+    -   https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form
+    -   https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/How_to_structure_an_HTML_form
+    -   https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form
+    -   https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Styling_HTML_forms
+    -   https://css-tricks.com/tips-for-creating-great-web-forms
+    -   https://css-tricks.com/options-for-web-forms
+
+        > floating label
+
+        -   https://codepen.io/callmenick/pen/OxpKNZ
+        -   https://codepen.io/tonystar/pen/LRdpYZ
+        -   https://codepen.io/elujambio/pen/yjwzGP
+
+[Back](#contents)
+
 ## Demo
 
-<!-- 1. [my first HTML page](https://github.com/baiGeorgi1/baiGeorgi1) -->
+<!-- 1. [my first HTML page](https://github.com/baiGeorgi1/baiGeorgi1)
+Exam -->
