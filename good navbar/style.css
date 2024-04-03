@@ -1,0 +1,82 @@
+:root {
+    --body-bg: #123;
+    --nav-bg: rgb(69, 92, 15);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: system-ui;
+}
+body {
+    margin: 0;
+    font-size: 1.25rem;
+    background: #123;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    /* for vertical nav */
+    /* grid-template-rows: 10rem 1fr;
+    position: sticky;
+    top:0;
+    max-height: 100svh; */
+    gap: 2rem;
+}
+nav {
+    height: 5rem;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(69, 92, 115);
+    justify-content: center;
+}
+.nav-list {
+    display: flex;
+    height: 5rem;
+    font-size: 2rem;
+    width: 1320px;
+    justify-content: center;
+    gap: 5rem;
+}
+.nav-list li {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+    border-radius: 3vh 3vh 0 0;
+    list-style: none;
+}
+
+.nav-list li a {
+    cursor: pointer;
+    padding: 2.5rem;
+}
+.nav-list li.active {
+    background-color: var(--body-bg);
+    position: relative;
+}
+
+.nav-list .active::before,
+.nav-list .active::after {
+    /* can change the border-radius */
+    --border-radius: 2rem;
+    content: "";
+    position: absolute;
+    width: var(--border-radius);
+    height: var(--border-radius);
+    bottom: 0;
+    /* background-color: red; do this for config the borders*/
+    border-radius: 100vw;
+}
+.nav-list .active::before {
+    left: calc(var(--border-radius) * -1);
+    border-radius: 0 0 100vw 0;
+    box-shadow: 10px 10px 0 10px var(--body-bg);
+}
+.nav-list .active::after {
+    right: calc(var(--border-radius) * -1);
+    border-radius: 0 0 0 100vw;
+    box-shadow: -10px 10px 0 10px var(--body-bg);
+}
