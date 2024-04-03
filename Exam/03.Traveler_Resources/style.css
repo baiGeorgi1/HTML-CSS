@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+html {
+    font: 18px/1.5 "Karla";
+}
+body {
+    font: inherit;
+    margin: 0 auto;
+    max-width: 1920px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font: 16px/1.5 "Cormorant Infant";
+}
+h1 {
+    font-size: 5.6em;
+    font-weight: bold;
+}
+h2 {
+    font-size: 2.66em;
+}
+h5 {
+    font-family: Karla;
+    font-size: 1.22em;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 5.3em;
+    align-items: center;
+}
+.logo {
+    width: 110px;
+}
+nav ul {
+    list-style: none outside;
+    display: flex;
+    justify-content: space-between;
+    gap: 3em;
+}
+nav li a {
+    color: white;
+    text-decoration: none;
+}
+.main {
+    margin: 0;
+    padding-inline: 22em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.banner {
+    margin: 0;
+    height: 870px;
+    background-image: url("./images/poster.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    color: white;
+}
+.welcome {
+    height: 736px;
+    padding-top: 13.5em;
+    padding-bottom: 10em;
+    align-items: center;
+}
+.welcome h1 {
+    letter-spacing: 0;
+}
+.welcome p {
+    padding-top: 9em;
+    text-align: center;
+}
+.testimonials,
+.read {
+    background-color: #f8f0e9;
+    padding-block: 3.3em;
+    align-items: stretch;
+}
+.testimonials span {
+    margin-block: 5.55em;
+    line-height: 1;
+}
+
+.testimonials span p {
+    font-size: 4em;
+    font-style: italic;
+    font-family: "Cormorant Infant";
+    font-weight: bold;
+}
+.frame {
+    padding: 5em 22.5em;
+    background-color: #e14747;
+    color: #fff;
+    gap: 3.67em;
+}
+.frame h5 {
+    font-weight: bold;
+}
+
+.frame p {
+    text-align: center;
+}
+.read {
+    align-items: center;
+}
+.read img {
+    width: 34.7em;
+}
+.read article {
+    padding: 7em 14em;
+}
+.read article p {
+    padding-bottom: 5em;
+}
+.read h2 {
+    padding-top: 5.4rem;
+    line-height: 1;
+    text-align: center;
+    font-weight: bold;
+}
+
+.button {
+    border: 1px solid black;
+    border-radius: 0.3em;
+    padding: 0.8em 1.6em;
+    text-decoration: none;
+    color: black;
+}
+.find {
+    border: none;
+    background-color: #fad87a;
+    border-radius: 1.7em;
+}
+footer {
+    background-color: #352b2a;
+    padding: 3.9em 8.8em;
+}
+footer .logo {
+    padding-bottom: 1em;
+}
+footer p {
+    padding-top: 2em;
+}
+footer p:first-of-type {
+    color: #fff;
+}
+footer p:last-of-type {
+    color: #76615a;
+}
